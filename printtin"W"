@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int i, j,rows=10,n= rows / 2;
+    for (i = 0; i <rows; i++) 
+    {
+        printf("*");
+        for (j = 0; j <=rows; j++) 
+        {
+            if (j == rows)
+                printf("*");
+            else if ((i >=rows/ 2) && (j ==n|| j == rows-n- 1))
+                printf("*");
+            else
+                printf(" ");
+        }
+        if (i >=rows/ 2) 
+        {
+            n++;
+        }
+        printf("\n");
+    }
+}
