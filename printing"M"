@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int i, j,rows=10,n= 0;
+    for (i =1; i <rows; i++) 
+    {
+        printf("*");
+        for (j =0;j <=rows;j++)
+        {
+            if (j ==rows)
+                printf(" *");
+            else if (j == n ||j == rows-n-1)
+                printf("*");
+            else
+                printf(" ");
+        }
+        if (n== rows/2) 
+           printf(" ");
+        else
+         n++;
+           printf("\n");
+    }
+}
