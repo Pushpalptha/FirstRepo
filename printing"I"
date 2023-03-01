@@ -17,7 +17,7 @@ int main()
         printf("\n");
     }
          
-    for(i=6;i<=rows;i++)
+    for(i=1;i<=rows;i++)
         printf("*");
     return 0;
 }
