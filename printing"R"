@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+   
+    int i, j, rows=10,n= (rows / 2),k=(2* rows)-1;
+    for (i = 0; i <rows; i++) {
+        printf("*");
+        for (j = 0; j <k; j++) {
+            if ((i == 0 || i == n) && j < (k - 2))
+                printf("*");
+            else if (j == (k- 2) && !(i == 0 || i == n))
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+}
