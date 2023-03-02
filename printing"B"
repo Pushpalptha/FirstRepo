@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int height = 10;
-    int width = (2 * height) - 1;
-    int i, j, half = (height / 2);
-    for (i = 0; i < height; i++) 
+    int  rows= 10;
+    int  k = (2 * rows) - 1;
+    int i, j, n= (rows/ 2);
+    for (i = 0; i <rows; i++) 
     {
         printf("*");
-        for (j = 4; j < width; j++)
+        for (j = 4; j <k; j++)
         {
-            if ((i == 0 || i == height - 1 || i == half) && j < (width - 2))
+            if ((i == 0 || i == n - 1 || i ==n) && j < (n- 2))
                 printf("*");
-            else if (j == (width - 2) && !(i == 0 || i == height - 1 || i == half))
+            else if (j == (n - 2) && !(i == 0 || i == k - 1 || i == n))
                 printf("*");
             else
                 printf(" ");
