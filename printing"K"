@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int i, j,rows=10,k=rows/ 2, temp=k;
+    for (i = 0; i <rows; i++) 
+    {
+        printf("*");
+        for (j = 0; j <= k; j++) 
+        {
+            if (j == (k))
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+        k--;
+    }
+
+}
